@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=Noto+Sans+Mono:wght@100;200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>BS Shopping</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="grid-cabecalho">
+        <section class="cabecalho">
+          <div class="logo">
+            <img src="/imagens/logo.jpg" alt="" />
+          </div>
+
+          <nav class="menu-header">
+            <ul>
+              <li><a href="Home">Home</a></li>
+              <li><a href="Home">Shop</a></li>
+              <li><a href="Home">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="btn-hamburguer">
+            <span></span>
+            <span></span>
+          </div>
+          <!-- <div class="search desktop">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" name="" id="search" placeholder="Search" />
+          </div> -->
+        </section>
+      </div>
+    </header>
+    <main id="main">
+      <h1 class="titulo">Produtos</h1>
+      <div class="search mobile">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" name="" id="search" placeholder="Search" />
+      </div>
+      <div class="sem-produtos">
+        <h2>Nenhum produto encontrado</h2>
+      </div>
+      <section class="container-produtos">
+        <!-- <section class="produto-item"> 
+          <span class="produto-item-categoria">men's clothing</span>
+          <img
+            onclick="texto"
+            class="produto-item-img"
+            src="./imagens/tenis.webp"
+            alt="Bolsa"
+          />
+
+          <h2 class="produto-item-title">Tenis Adidas Novo</h2>
+          <p class="produto-item-descripton">Lorem ipsum, dolor</p>
+          <p class="qntddProduto">
+            Quantidade:<input
+              type="number"
+              name="quantidade"
+              class="valueQntdd"
+              value="1"
+            />
+          </p>
+          <span class="produto-item-price">$9,99</span>
+          <span class="produto-item-carrinho"
+            ><i class="fa-solid fa-cart-plus"></i
+          ></span>
+        </section>
+        <!-- 
+          
+        <section class="produto-item">
+          <span class="produto-item-categoria">men's clothing</span>
+          <img
+            onclick="texto"
+            class="produto-item-img"
+            src="./imagens/tenis.webp"
+            alt="Bolsa"
+          />
+          <h2 class="produto-item-title">But da Oakley</h2>
+          <p class="produto-item-descripton">Lorem ipsum, dolor</p>
+          <span class="produto-item-price">$4,99</span>
+          <span class="produto-item-carrinho"
+            ><img src="/imagens/cart.png"
+          /></span>
+        </section>
+        <section class="produto-item">
+          <span class="produto-item-categoria">men's clothing</span>
+          <img
+            onclick="texto"
+            class="produto-item-img"
+            src="./imagens/tenis.webp"
+            alt="Bolsa"
+          />
+          <h2 class="produto-item-title">Sapato Nike</h2>
+          <p class="produto-item-descripton">Lorem ipsum, dolor</p>
+          <span class="produto-item-price">$19,99</span>
+          <span class="produto-item-carrinho"
+            ><img src="/imagens/cart.png"
+          /></span>
+        </section>
+        <section class="produto-item">
+          <span class="produto-item-categoria">men's clothing</span>
+          <img
+            onclick="texto"
+            class="produto-item-img"
+            src="./imagens/tenis.webp"
+            alt="Bolsa"
+          />
+          <h2 class="produto-item-title">Chuteira Adidas</h2>
+          <p class="produto-item-descripton">Lorem ipsum, dolor</p>
+          <span class="produto-item-price">$2,99</span>
+          <span class="produto-item-carrinho"
+            ><img src="/imagens/cart.png"
+          /></span>
+        </section>
+        <section class="produto-item">
+          <span class="produto-item-categoria">men's clothing</span>
+          <img
+            onclick="texto"
+            class="produto-item-img"
+            src="./imagens/tenis.webp"
+            alt="Bolsa"
+          />
+          <h2 class="produto-item-title">Tenis Masculino WS Atletic</h2>
+          <p class="produto-item-descripton">Lorem ipsum, dolor</p>
+          <span class="produto-item-price">$19,99</span>
+          <span class="produto-item-carrinho"
+            ><img src="/imagens/cart.png"
+          /></span>
+        </section>-->
+      </section>
+    </main>
+
+    <section id="cart-produtos">
+      <span class="btn-fechar-cart">X</span>
+      <div class="grid-cart-produtos">
+        <!-- <div class="cart-produto-item">
+          <img src="/imagens/tenis.webp" alt="" />
+          <h3>Tenis Masculino WS Atletic</h3>
+          <span class="price">$19,99</span>
+          <span>X</span>
+        </div>
+        <hr /> -->
+      </div>
+      <div class="car-protudos-rodape">
+        <h3>Total a pagar:</h3>
+        <span class="valorTotal">$0,00</span>
+        <button class="btn-continuar-comprando">Continuar Comprando</button>
+        <button class="btn-finalizar">Finalizar</button>
+      </div>
+    </section>
+    <span class="bagFinish">
+      <i class="fa-solid fa-bag-shopping"></i>
+    </span>
+  </body>
+  <script defer src="/js/script.js"></script>
+</html>
