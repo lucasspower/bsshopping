@@ -1,7 +1,7 @@
 // https://demo.minotheme.com/zangi/html/?i=243246&aff=entheos
 let allProdutos = document.querySelectorAll(".produto-item");
 
-const result = fetch("https://fakestoreapi.com/products?limit=5")
+const result = fetch("https://fakestoreapi.com/products?limit=*")
   .then((resp) => {
     return resp.json();
   })
