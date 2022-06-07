@@ -3,11 +3,29 @@ let todosProdutos = document.querySelectorAll(".produto-item");
 const cartProdutos = document.querySelector(".grid-cart-produtos");
 const urlApi = "https://fakestoreapi.com/products?limit=*";
 
+<<<<<<< HEAD
 async function initFetchApi(api) {
   const response = await fetch(api);
   const result = await response.json();
   criarItemProduto(result);
   todosProdutos = document.querySelectorAll(".produto-item");
+=======
+const result = fetch("https://fakestoreapi.com/products?limit=*")
+  .then((resp) => {
+    return resp.json();
+  })
+  .then((json) => {
+    return json;
+  });
+result.then((result) => {
+  createItemProduto(result);
+  allProdutos = document.querySelectorAll(".produto-item");
+});
+function createItemProduto(ArrProdutos) {
+  ArrProdutos.forEach((products) => {
+    criarElemento(products);
+  });
+>>>>>>> 8b3b9487fad8e945586bf845d591d85658ea07f4
 }
 initFetchApi(urlApi);
 
