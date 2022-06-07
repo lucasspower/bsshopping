@@ -61,11 +61,7 @@ img{
 
 /* ********************************* */
 #header{
-<<<<<<< HEAD
   background-image: url('../imagens/background1.jpg');
-=======
-  background-image: url('../imagens/background-header-shopping.jpg');
->>>>>>> 8b3b9487fad8e945586bf845d591d85658ea07f4
   width: 100%;
   background-size: cover;
   height: 100vh;
